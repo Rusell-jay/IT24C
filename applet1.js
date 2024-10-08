@@ -5,9 +5,7 @@ function updateDisplay() {
     displayText.textContent = textbox.value;
 }
 
-//Event Function 2
 function showAlert() {
     var textbox = document.getElementById('textbox');
-    var text = textbox.value;
-    alert('You entered: ' + text.value);
+    alert("Hello " + textbox.value);
 }
