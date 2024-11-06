@@ -1,29 +1,24 @@
 class AppletCard {
-    constructor(title,icon, description, link) {
+    constructor(title, description, link, image) {
         this.title = title;
-        this.icon = icon;
         this.description = description;
         this.link = link;
+        this.image = image || ''; // If image is not provided, use an empty string
     }
 
     createCard() {
         const cardDiv = document.createElement('div');
         cardDiv.className = 'card applet-card';
+
+        // Add image if it exists and apply inline style to make it small like an icon
+        const imageTag = this.image ? `<img src="${this.image}" class="card-img-top" alt="${this.title}" style="width: 50px; height: 50px; object-fit: cover; margin-bottom: 10px;">` : '';
+
         cardDiv.innerHTML = `
-            <div class="card"  data-bs-toggle="tooltip" title="${this.description}">
-                <a href="${this.link}" style="text-decoration: none; color: inherit;">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="${this.icon}" class="applet-icon rounded float-start">
-                            </div>
-                            <div class="col-8">
-                                <h5 class="card-title">${this.title}</h5>
-                                <p class="card-text"</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+            ${imageTag}  <!-- Insert image if available -->
+            <div class="card-body">
+                <h5 class="card-title">${this.title}</h5>
+                <p class="card-text">${this.description}</p>
+                <a href="${this.link}" class="btn btn-primary applet-btn">Go to Applet</a>
             </div>
         `;
         return cardDiv;
@@ -51,21 +46,11 @@ class AppletRenderer {
     }
 
     renderApplets(data) {
-        this.container.innerHTML = '';
+        this.container.innerHTML = ''; // Clear previous content
         data.forEach(applet => {
-            const appletCard = new AppletCard(applet.title,applet.icon, applet.description, applet.link);
+            const appletCard = new AppletCard(applet.title, applet.description, applet.link, applet.image);
             const cardElement = appletCard.createCard();
             this.container.appendChild(cardElement);
-        });
-
-        // Initialize tooltips after rendering
-        this.initializeTooltips();
-    }
-
-    initializeTooltips() {
-        const tooltipTriggerList = [].slice.call(this.container.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        tooltipTriggerList.forEach(tooltipTriggerEl => {
-            new bootstrap.Tooltip(tooltipTriggerEl);
         });
     }
 
@@ -79,5 +64,6 @@ class AppletRenderer {
     }
 }
 
+// Initialize and fetch the applet data
 const appletRenderer = new AppletRenderer('applet-container', 'searchApplet');
-appletRenderer.fetchAppletData('applet.json');
+appletRenderer.fetchAppletData('applet.json');  // Ensure 'applets.json' is correct and accessible
