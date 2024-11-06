@@ -1,32 +1,39 @@
 [
     {
-        "title": "Applet 1 - Basic Events",
-        "description": "This application contains the basic implementation of DOM events",
-        "link": "applet1.html/applet51.js"
+      "title": "Applet 1 - Basic Events",
+      "description": "This application contains the basic implementation of DOM events",
+      "link": "./applet-1/",
+      "image": "https://cdn-icons-png.flaticon.com/512/2646/2646050.png"
     },
     {
-        "title": "Applet 2 - Leaflet Map",
-        "description": "This application contains the basic web map",
-        "link": "applet2.html/applet2.js"
+      "title": "Applet 2 - Leaflet Map",
+      "description": "This application contains the basic web map",
+      "link": "./applet-2/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-R9ALnuzNCMt347f4ZouK7tyRftzV4xPlQ&s"
     },
     {
-        "title": "Applet 3 - Event Button Logger",
-        "description": "This application applies recording events while using HTML elements such as buttons",
-        "link": "applet3.html/applet3.js"
+      "title": "Applet 3 - Event Button Logger",
+      "description": "This application applies recording events while using HTML elements such as buttons",
+      "link": "./applet-3/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBI-gxDC5KqIr38CnP8r0py87BVbVSmDTtd5oP8ZOEEra70bzqg7gUnr_ph5RzkTjru3g&usqp=CAU"
     },
     {
-        "title": "Applet 4 - Dynamic Elements",
-        "description": "This application applies dynamic elements such as rendering DOM elements from a list",
-        "link": "applet4.html/applet4.js"
+      "title": "Applet 4 - Dynamic Elements",
+      "description": "This application applies dynamic elements such as rendering DOM elements from a list",
+      "link": "./applet-4/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQYVauVovez68_GlTBCv3iQBCV9dMBZppUSVmPArcUTcxQaiVlgyNxBgKHnw-tM7-f7xo&usqp=CAU"
     },
     {
-        "title": "Applet 5 - Openweather API",
-        "description": "This application is the basic usage of the Openweather API",
-        "link": "applet5.html/applet5.js"
+      "title": "Applet 5 - Openweather API",
+      "description": "This application is the basic usage of the Openweather API",
+      "link": "./applet-5/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT3_uf54xBolp1MZNW7_zk31jhLmQlkNbaLMHTAOPE3Nq8_ehw6QEOLHDkgNkGQkncEUs&usqp=CAU"
     },
     {
-        "title": "Applet 6 - Todo List",
-        "description": "A to-do list is a tool that helps individuals manage tasks by allowing them to add, edit, and remove items.",
-        "link": "applet6.html/applet6.js"
+      "title": "Applet 6 - Todo List",
+      "description": "A to-do list is a tool that helps individuals manage tasks by allowing them to add, edit, and remove items.",
+      "link": "./applet-6/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOnkoaz81RAzkjHCg4lHKuWly7mPZ6FRG-G7ebIq66fOrWBbYOeTWUQGXGsp1-kUt7ssc&usqp=CAU"
     }
-]
+  ]
+  
