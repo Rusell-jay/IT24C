@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Applet 1 - Basic Events",
+        "description": "This application contains the basic implementation of DOM events",
+        "link": "applet1.html/applet51.js"
+    },
+    {
+        "title": "Applet 2 - Leaflet Map",
+        "description": "This application contains the basic web map",
+        "link": "applet2.html/applet2.js"
+    },
+    {
+        "title": "Applet 3 - Event Button Logger",
+        "description": "This application applies recording events while using HTML elements such as buttons",
+        "link": "applet3.html/applet3.js"
+    },
+    {
+        "title": "Applet 4 - Dynamic Elements",
+        "description": "This application applies dynamic elements such as rendering DOM elements from a list",
+        "link": "applet4.html/applet4.js"
+    },
+    {
+        "title": "Applet 5 - Openweather API",
+        "description": "This application is the basic usage of the Openweather API",
+        "link": "applet5.html/applet5.js"
+    },
+    {
+        "title": "Applet 6 - Todo List",
+        "description": "A to-do list is a tool that helps individuals manage tasks by allowing them to add, edit, and remove items.",
+        "link": "applet6.html/applet6.js"
+    }
+]
